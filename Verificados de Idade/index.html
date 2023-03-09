@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Verificador de idade</title>
+</head>   
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>Sexo:<br>
+                <input type="radio" name="radsex"
+                id="masc" checked>
+                <label for="masc">masculino</label>
+                <input type="radio" name="radsex"
+                id="fem">  
+                 <!--o name precisa ser o mesmo pra entender que pertece a mesma opção, pra nao dar pra marcar os 2  -->
+                <label for="fem">feminino</label>
+
+            </p>
+            <p>
+                <!--<input type="button" value="verificar" onclick="verificar()"> -->
+                <button type ="submit" onclick="verificar()" >Verificar</button>
+                <!--onclick é para o JS -->
+            </p>
+        </div>
+        <div id="res">
+            <p>Preencha os dados acima para ver o resultado</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
